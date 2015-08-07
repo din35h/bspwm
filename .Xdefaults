@@ -1,0 +1,117 @@
+!!=============================================================================
+!! RXVT-unicode setting
+!!=============================================================================
+!本地透明设置
+URxvt.transparent: false
+! URxvt.shading: 0 to 99 darkens, 101 to 200 lightens
+URxvt.shading: 180
+
+URxvt.depth:32
+URxvt.inputMethod:ibus
+URxvt.scrollBar:False
+URxvt.scrollBar_right:False
+URxvt.scrollBar_floating: False
+URxvt.scrollstyle:plain
+URxvt.saveLines:10000
+URxvt.menu:/etc/X11/rxvt.menu
+URxvt.preeditType:Root
+URxvt.jumpScroll:false
+URxvt.cursorBlink:true
+!Icon
+URxvt.iconFile:/usr/share/icons/gnome/16x16/apps/terminal.png
+!Set TERM
+URxvt.termName:rxvt-unicode-256color
+#Tab support
+URxvt.perl-ext-common:  default,tabbed,url-picker,clipboard,matcher
+!Shorcut HELP
+!Shift+ ↓ new tab
+!Shift+ ← go to left tab
+!Shift+ → go to right tab
+!Ctrl+ ← move tab to the left
+!Ctrl+ → move tab to the right
+!Ctrl+D: close tab
+URxvt.tabbed.tabbar-fg: 2
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg:    12
+URxvt.tabbed.tab-bg:    0
+URxvt.geometry:100x35
+URxvt*cursorUnderline: true
+URxvt.tabbed.autohide: true
+
+
+
+
+Xft.dpi:96
+Xft.antialias:			true
+Xft.rgba:			rgb
+Xft.autohint:			false
+Xft.hinting:			true
+Xft.hintstyle:			hintfull
+urxvt*font:                 	xft:Input Mono:Bold:size=10
+urxvt*imFont:               	xft:Input Mono:Bold:size=10
+urxvt*boldFont:             	xft:Input Mono:Bold:size=10
+urxvt*italicFont:           	xft:Input Mono:Bold:size=10
+urxvt*boldItalicFont:       	xft:Input Mono:Bold:size=10
+urxvt*letterSpace:	-1
+
+# clickable Url and copy paste keys
+
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+
+URxvt.iso14755: False
+
+URxvt.url-launcher: /usr/bin/firefox
+
+URxvt.matcher.button: 1
+
+
+Xft.lcdfilter:  lcddefault
+
+
+
+URxvt*dynamicColors:    on
+URxvt*highlightSelection: true
+URxvt*colorMode:    on
+
+
+
+
+
+urxvt*borderColor:		#373b41
+
+! special
+*.foreground:   #eceff1
+*.background:   #263238
+*.cursorColor:  #eceff1
+
+! black
+*.color0:       #263238
+*.color8:       #37474f
+
+! red
+*.color1:       #ff9800
+*.color9:       #ffa74d
+
+! green
+*.color2:       #8bc34a
+*.color10:      #9ccc65
+
+! yellow
+*.color3:       #ffc107
+*.color11:      #ffa000
+
+! blue
+*.color4:       #03a9f4
+*.color12:      #81d4fa
+
+! magenta
+*.color5:       #e91e63
+*.color13:      #A56ECC
+
+! cyan
+*.color6:       #009688
+*.color14:      #26a69a
+
+! white
+*.color7:       #cfd8dc
+*.color15:      #eceff1
